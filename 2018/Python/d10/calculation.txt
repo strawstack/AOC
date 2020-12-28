@@ -1,0 +1,24 @@
+1. position=<-50429,  40580> velocity=< 5, -4>
+y = -4/5 * x + 1184/5
+
+2. position=< 30528, -40359> velocity=<-3,  4>
+y = -4/3 * x + 345
+
+3. intersection of above equations:
+(1623/8, 149/2) or (202.875, 74.5)
+
+4. Time taken to get from -50429 to 202.875 at speed of 5/sec
+= (50429 - 202.875) / 5
+= 10045.225 (the real answer is 10117)
+
+5. After checking one intersection of points we are off by 71.775
+
+---
+
+6. rearrange for b
+y = mx + b
+b = y - mx
+
+7. solve for intersection point
+one_m * x + one_b = two_m * x + two_b
+inter_x = (two_b - one_b) / (one_m - two_m)
