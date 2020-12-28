@@ -2,6 +2,8 @@ use std::env;
 
 #[path = "d1/d.rs"]
 mod d1;
+#[path = "d10/d.rs"]
+mod d10;
 #[path = "d2/d.rs"]
 mod d2;
 #[path = "d3/d.rs"]
@@ -18,8 +20,6 @@ mod d7;
 mod d8;
 #[path = "d9/d.rs"]
 mod d9;
-#[path = "d10/d.rs"]
-mod d10;
 
 #[path = "d11/d.rs"]
 mod d11;
@@ -61,11 +61,9 @@ fn main() {
 
     if args.len() < 3 || args.len() > 3 {
         println!("cargo run [day] [part]");
-
     } else {
         day = args[1].parse::<i32>().unwrap();
         part = args[2].parse::<i32>().unwrap();
-
     }
 
     let days: Vec<fn(i32) -> ()> = vec![
@@ -79,7 +77,6 @@ fn main() {
         |p| d8::main(p),
         |p| d9::main(p),
         |p| d10::main(p),
-
         |p| d11::main(p),
         |p| d12::main(p),
         |p| d13::main(p),
@@ -90,7 +87,6 @@ fn main() {
         |p| d18::main(p),
         |p| d19::main(p),
         |p| d20::main(p),
-
         |p| d21::main(p),
         |p| d22::main(p),
         |p| d23::main(p),
