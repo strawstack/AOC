@@ -2,8 +2,6 @@ use std::env;
 
 #[path = "d1/d.rs"]
 mod d1;
-#[path = "d10/d.rs"]
-mod d10;
 #[path = "d2/d.rs"]
 mod d2;
 #[path = "d3/d.rs"]
@@ -20,7 +18,8 @@ mod d7;
 mod d8;
 #[path = "d9/d.rs"]
 mod d9;
-
+#[path = "d10/d.rs"]
+mod d10;
 #[path = "d11/d.rs"]
 mod d11;
 #[path = "d12/d.rs"]
@@ -41,7 +40,6 @@ mod d18;
 mod d19;
 #[path = "d20/d.rs"]
 mod d20;
-
 #[path = "d21/d.rs"]
 mod d21;
 #[path = "d22/d.rs"]
