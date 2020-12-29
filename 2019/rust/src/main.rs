@@ -2,22 +2,6 @@ use std::env;
 
 #[path = "d1/d.rs"]
 mod d1;
-#[path = "d2/d.rs"]
-mod d2;
-#[path = "d3/d.rs"]
-mod d3;
-#[path = "d4/d.rs"]
-mod d4;
-#[path = "d5/d.rs"]
-mod d5;
-#[path = "d6/d.rs"]
-mod d6;
-#[path = "d7/d.rs"]
-mod d7;
-#[path = "d8/d.rs"]
-mod d8;
-#[path = "d9/d.rs"]
-mod d9;
 #[path = "d10/d.rs"]
 mod d10;
 #[path = "d11/d.rs"]
@@ -38,6 +22,8 @@ mod d17;
 mod d18;
 #[path = "d19/d.rs"]
 mod d19;
+#[path = "d2/d.rs"]
+mod d2;
 #[path = "d20/d.rs"]
 mod d20;
 #[path = "d21/d.rs"]
@@ -50,6 +36,20 @@ mod d23;
 mod d24;
 #[path = "d25/d.rs"]
 mod d25;
+#[path = "d3/d.rs"]
+mod d3;
+#[path = "d4/d.rs"]
+mod d4;
+#[path = "d5/d.rs"]
+mod d5;
+#[path = "d6/d.rs"]
+mod d6;
+#[path = "d7/d.rs"]
+mod d7;
+#[path = "d8/d.rs"]
+mod d8;
+#[path = "d9/d.rs"]
+mod d9;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
