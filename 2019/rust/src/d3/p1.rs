@@ -7,10 +7,11 @@ pub fn main() {
         .trim().lines() // &str to &[str]
         .map(|line| { // line: &str
             line.trim().split(",") // &[str]
-            .map(|t| {
-                t.chars().collect::<Vec<char>>() // &[str] to Vec<char>
+            .map(|t| { // t: &str
+                t.chars()
+                .collect::<Vec<char>>() // &str to iter[Vec<char>]
             })
-            .map(|t| { // t: &[char]
+            .map(|t| { // t: Vec<char>
                 (
                     t[0], // char
                     t[1..].iter()
