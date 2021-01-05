@@ -12,7 +12,7 @@ pub fn main() {
             })
             .map(|t| { // t: &[char]
                 (
-                    t[0], // First char 'L' or 'R'
+                    t[0], // char
                     t[1..].iter()
                         .collect::<String>() // &[char] to String
                         .parse().unwrap() // String to i32
