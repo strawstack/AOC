@@ -1,6 +1,4 @@
 use std::fs;
-use std::io::{self, BufRead};
-//use std::io::{self, BufRead, Write};
 
 pub fn main() {
     let fname = "src/d5/input.txt";
@@ -66,10 +64,11 @@ pub fn main() {
                 //print!("input: ");
                 //io::stdout().flush().unwrap();
 
-                let mut line = String::new();
-                let stdin = io::stdin();
-                stdin.lock().read_line(&mut line).unwrap();
-                let data = line.trim().parse::<i32>().unwrap();
+                //let mut line = String::new();
+                //let stdin = io::stdin();
+                //stdin.lock().read_line(&mut line).unwrap();
+                //let data = line.trim().parse::<i32>().unwrap();
+                let data = 1;
                 mem[a as usize] = data;
             },
             4 => {
